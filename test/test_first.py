@@ -15,5 +15,4 @@ def client():
 
 def test_first(client):
     response = client.get('/api/v1.0/first')
-    assert response.status_code == 200
-    
+    assert response.status_code == 201
