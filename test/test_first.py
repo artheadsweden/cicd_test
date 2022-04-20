@@ -1,5 +1,9 @@
 import pytest
-from ..src.app import create_app
+import sys # added!
+sys.path.append("..") # added!
+
+from src.app import create_app
+
 
 
 @pytest.fixture
