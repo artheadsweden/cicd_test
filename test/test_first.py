@@ -1,9 +1,5 @@
 import pytest
-import sys # added!
-sys.path.append("..") # added!
-
 from src.app import create_app
-
 
 
 @pytest.fixture
@@ -14,7 +10,6 @@ def client():
 
     with app.app_context():
         with app.test_client() as client:
-
             yield client
 
 
