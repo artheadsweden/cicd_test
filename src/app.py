@@ -15,7 +15,9 @@ def create_app():
 
     @app.get('/api/v1.0/first')
     def first_get():
-        return Response(json.dumps({'name': 'Jane', 'age': 24}), 200, content_type='application/json')
+        return Response(json.dumps({'name': 'Jane', 'age': 24}),
+                        200,
+                        content_type='application/json')
 
     return app
 
