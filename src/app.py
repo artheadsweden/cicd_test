@@ -1,8 +1,16 @@
-from flask import Flask, Response
+"""
+The API
+"""
+
 import json
+from flask import Flask, Response
 
 
 def create_app():
+    """
+    Factory function
+    :return: app object
+    """
     app = Flask(__name__)
 
     @app.get('/api/v1.0/first')
