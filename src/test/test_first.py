@@ -2,8 +2,8 @@
 PYTESTS
 """
 
+from ..app import create_app
 import pytest
-from src.app import create_app
 
 
 @pytest.fixture
