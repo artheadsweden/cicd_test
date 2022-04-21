@@ -21,11 +21,11 @@ def client():
             yield api_client
 
 
-def test_first(a_client):
+def test_first(client):
     """
     test of first
     :param client:
     :return: None
     """
-    response = a_client.get('/api/v1.0/first')
+    response = client.get('/api/v1.0/first')
     assert response.status_code == 200
