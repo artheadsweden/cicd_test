@@ -14,3 +14,4 @@ pyparsing==3.0.8
 pytest==7.1.1
 tomli==2.0.1
 Werkzeug==2.1.1
+gunicorn==20.1.0
